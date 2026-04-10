@@ -1,0 +1,37 @@
+name: space-mission-rl-env
+version: 1.0.0
+benchmark: space_mission
+description: "Space Mission Control RL Environment - Make critical decisions to ensure mission success"
+
+tasks:
+  - orbit_stabilization_1
+  - orbit_stabilization_2
+  - lunar_landing_1
+  - lunar_landing_2
+  - docking_procedure_1
+  - docking_procedure_2
+  - emergency_rescue_1
+  - emergency_rescue_2
+  - asteroid_mining_1
+  - asteroid_mining_2
+  - solar_storm_evasion_1
+  - solar_storm_evasion_2
+  - satellite_repair_1
+  - satellite_repair_2
+  - mars_transfer_1
+  - mars_transfer_2
+
+grading:
+  max_score: 1.0
+  success_threshold: 0.6
+  
+server:
+  entrypoint: "server/app.py"
+  port: 7860
+  health_endpoint: "/health"
+  reset_endpoint: "/reset"
+  step_endpoint: "/step"
+
+docker:
+  image: "space-mission-rl-env"
+  port: 7860

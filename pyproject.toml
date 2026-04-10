@@ -1,0 +1,43 @@
+[project]
+name = "space-mission-rl-env"
+version = "1.0.0"
+description = "Space Mission Control RL Environment for OpenEnv"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.2",
+    "uvicorn[standard]>=0.32.0",
+    "gradio>=5.5.0",
+    "gymnasium>=0.29.1",
+    "numpy>=1.26.4",
+    "pydantic>=2.9.2",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "openenv-core>=0.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.6.0",
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["server*", "tasks*"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
