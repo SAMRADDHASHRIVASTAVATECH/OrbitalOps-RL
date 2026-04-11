@@ -545,5 +545,5 @@ GitHub • LinkedIn • Portfolio
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18,20&height=150&section=footer" width="100%"/>
 <sub>Built with ❤️ for the advancement of AI in space exploration</sub><br/>
-<sub>© 2025 Samraddha Shrivastava • All Rights Reserved</sub>
+<sub>© 2026 Samraddha Shrivastava • All Rights Reserved</sub>
 </div>
